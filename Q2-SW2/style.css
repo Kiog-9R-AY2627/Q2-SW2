@@ -1,0 +1,371 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f4f6f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.navbar {
+  background-color: #26292e;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  position: relative;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #26292e;
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #b0b5bd;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffffff;
+}
+
+.btn-get-started {
+  background-color: #0d6efd;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.45rem 1rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.btn-get-started:hover {
+  background-color: #0b5ed7;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #b0b5bd;
+}
+
+
+.contact-hero {
+  flex: 1;
+  background-color: #dbe4ee;
+  background-image: url('https://obmontessori.orangeapps.ph/landing/obmontessori/images/Greenhills%20Facade.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.82) 0%,
+    rgba(255, 255, 255, 0.5) 45%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
+  min-height: 100%;
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.hero-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-header h1 {
+  font-size: 2rem;
+  color: #212529;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.hero-header p {
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+
+.contact-grid {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+
+.message-card {
+  padding: 1.75rem;
+}
+
+.message-card h2 {
+  color: #0d6efd;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: #495057;
+  background-color: #fff;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0d6efd;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #0d6efd;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.7rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #0b5ed7;
+}
+
+
+.info-header {
+  background-color: #0d6efd;
+  color: #ffffff;
+  padding: 0.9rem 1.35rem;
+}
+
+.info-header h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.info-body {
+  padding: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-item strong {
+  display: block;
+  font-size: 0.85rem;
+  color: #212529;
+  margin-bottom: 0.25rem;
+}
+
+.info-item p {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.45;
+}
+
+
+.footer {
+  background-color: #26292e;
+  color: #d1d5db;
+  text-align: center;
+  padding: 0.9rem 1rem;
+  font-size: 0.8rem;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1.25rem;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    gap: 0.9rem;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.85rem;
+    width: 100%;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: 1px solid #666;
+  color: #ccc;
+  font-size: 20px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .brand-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-collapse {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  #menu-toggle:checked ~ .nav-collapse {
+    display: flex;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .menu-list li {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+}

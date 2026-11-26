@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get in Touch - OB Montessori Center</title>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+      <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-top">
+        <a href="#" class="logo">
+          <div class="logo-circle"><img src="logo2.png" height="36" alt="OB Montessori Logo"></div>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Enroll</a></li>
+          <li><a href="#" class="active">Contact Us</a></li>
+        </ul>
+        <a href="#" class="btn-get-started">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="contact-hero">
+    <div class="hero-overlay">
+      <div class="hero-header">
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you! Send us a message using the form below.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <section class="card message-card">
+          <h2>Send Us a Message</h2>
+          <form action="#" method="POST" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" name="first_name" placeholder="First Name *" required />
+              </div>
+              <div class="form-group">
+                <input type="text" name="last_name" placeholder="Last Name *" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email Address *" required />
+            </div>
+
+            <div class="form-group">
+              <select name="subject" required>
+                <option value="" disabled selected>Subject Dropdown...</option>
+                <option value="admissions">Admissions & Enrollment</option>
+                <option value="academics">Academic Inquiry</option>
+                <option value="general">General Inquiry</option>
+                <option value="feedback">Feedback</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <textarea name="message" rows="5" placeholder="Your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+        </section>
+
+
+        <aside class="card info-card">
+          <div class="info-header">
+            <h2>Contact Info</h2>
+          </div>
+          <div class="info-body">
+            <div class="info-item">
+              <strong>Office Address:</strong>
+              <p>3 Eisenhower St., Bgy. Greenhills, San Juan City, Metro Manila, Philippines</p>
+            </div>
+
+            <div class="info-item">
+              <strong>Phone:</strong>
+              <p>+63 2 8722 9720 to 26</p>
+            </div>
+
+            <div class="info-item">
+              <strong>Email:</strong>
+              <p>info@obmontessori.edu.ph</p>
+            </div>
+
+            <div class="info-item">
+              <strong>Working Hours:</strong>
+              <p>Mon - Fri: 8:00 AM - 4:30 PM</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 OB Montessori Center. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+    });
+  </script> 
+
+  
+</body>
+</html>
